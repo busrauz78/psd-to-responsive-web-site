@@ -1,0 +1,347 @@
+* {
+  font-family: Trebuchet MS;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f7f7f7;
+}
+.wrapper {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+header {
+  background: #e5e5e5;
+  padding: 20px 0 ;
+  
+}
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+  
+}
+header h1 {
+  margin: 0;
+  text-indent: -100000px;
+  background: url(../images/logo.png) no-repeat;
+  width: 122px;
+  float: left;
+}
+header nav {
+  float: right;
+}
+header nav h2 {
+  line-height: 0;
+  margin: 0;
+  text-indent: -10000px;
+}
+header nav li {
+  list-style: none;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+header nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4e4e4e;
+  font-weight: bold;
+}
+header nav li a.current {
+  color: #1abb9c;
+}
+#main-banner {
+  max-height: 500px;
+  overflow: hidden;
+      text-align: center;
+    
+
+}
+#main-banner::before{
+    position:absolute;
+    width:100%;
+top:35%;
+display: block;
+
+   font-size:1.8em;
+    content:"We are a digital & branding agency based in London.";
+    color:#fff;
+   
+}
+#main-banner::after{
+  display: block;
+    position: absolute;
+    width:100%;
+font-size:1.4em;
+top:45%;
+    content:"We love to turn great ideas into beautiful products.";
+    color:#a8a8a8;
+}
+#main-banner img {
+  width: 100%;
+}
+button{
+  border:none;
+    position:absolute;
+    top:55%;
+    display: block;
+    left:44%;
+    background:#3f8dbf;
+    color:white;
+    text-transform:uppercase;
+    width:140px;
+    height:45px;
+}
+#selling-points {
+  margin-top: 60px;
+}
+#selling-points:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#selling-points li {
+  float: left;
+  list-style: none;
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+
+  line-height: 1.6em;
+}
+#latest-work {
+  margin-top: 30px;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 30px;
+}
+#latest-work h2 {
+  text-transform: uppercase;
+  color: #787878;
+  margin-bottom: 40px;
+}
+#latest-work::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#latest-work li {
+  list-style: none;
+  float: left;
+  width: 32%;
+}
+#latest-work li img {
+  width: 100%;
+}
+#latest-work li h3 {
+  color: #4e4e4e;
+  margin-bottom: 0;
+}
+#latest-work li p.tag {
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 5px;
+}
+#latest-work li p {
+  line-height: 1.6em;
+  color: #5c5c5c;
+}
+#latest-work li:nth-child(2) {
+  margin: 0 2%;
+}
+#quote {
+  line-height: 1.6em;
+  margin-top: 60px;
+
+  text-align: center;
+  width: 60%;
+  color: #4e4e4e;
+  padding: 70px 20%;
+  background: url("../images/quote.png") no-repeat center 20px;
+  background-color: #efefef;
+}
+footer {
+  background: #202020;
+  padding: 30px 0;
+  border-top: 10px solid #151515;
+}
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer h4 {
+  margin: 0;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+footer ul {
+  float: left;
+  width: 25%;
+  list-style: none;
+  margin-bottom: 20px;
+}
+footer li {
+  color: #aaa;
+  width: 80%;
+  font-size: 14px;
+  line-height: 1.6em;
+  margin: 20px 0;
+}
+footer li.address-icon {
+  background: url("../images/map.png") no-repeat left;
+  padding-left: 20px;
+}
+footer li.phone-icon {
+  background: url("../images/phone.png") no-repeat left;
+  padding-left: 20px;
+}
+footer li.mail-icon {
+  background: url("../images/mail.png") no-repeat left;
+
+  padding-left: 20px;
+}
+footer li.tw {
+  background: url("../images/tweet.png") no-repeat left 6px;
+
+  padding-left: 20px;
+}
+
+footer div#copyright {
+  border-top: 1px solid #363636;
+  color: #aaa;
+  width: 100%;
+  clear: both;
+  font-size: 14px;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  #main-banner::after,#main-banner::before{
+    content:"";
+  }
+button{
+  display: none;
+}
+  #selling-points li {
+    width: 40%;
+    
+    padding: 0 5%;
+    margin: 20px 0;
+  }
+  #latest-work li {
+    width: 50%;
+    padding: 0 25% !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+  #latest-work h2 {
+    text-align: center;
+  }
+  #quote {
+    width: 80%;
+    padding: 50px 10%;
+  }
+  footer ul {
+    margin: 0 5%;
+    width: 40%;
+  }
+  footer ul:nth-child(3) {
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header nav {
+    float: none;
+  }
+  header nav li {
+    width: 16.66%;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 0;
+  }
+  header h1 {
+    float: none;
+    margin: 0 auto 15px;
+  }
+ 
+}
+@media screen and (max-width: 480px) {
+  header div.wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding-bottom: 0;
+  }
+  header nav {
+    background: #555;
+    padding: 10px;
+  }
+
+  header nav li {
+    width: 100%;
+    float: none;
+    margin: 0 auto 15px;
+    padding: 10px 0;
+    border-top: 1px solid #4f4f4f;
+  }
+  header nav li a {
+    color: #999;
+  }
+  #burger-nav {
+    background: url(../images/burger.png) no-repeat 98% center;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+  }
+  header nav ul.open {
+    height: auto;
+  }
+
+  #selling-points li {
+    width: 70%;
+    padding: 0 15%;
+    margin: 20px 0;
+  }
+  #latest-work li {
+    width: 80%;
+    padding: 0 10% !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    text-align: center;
+  }
+  #quote {
+    width: 100%;
+    padding: 50px 0;
+    font-size: 15px;
+  }
+  footer {
+    padding: 0 10px;
+  }
+  footer ul {
+    float: none;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #363636;
+    padding: 10px 0;
+  }
+  #copyright {
+    text-align: center;
+    padding-top: 40px !important;
+  }
+}
